@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta>
+    <title>Random Background</title>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+
+        const colors = [
+            'white', 'red', 'grey', 'black', 'yellow',
+            'green', 'brown', 'pink', 'blue', 'orange'
+        ];
+
+        function getRandomColor() {
+            return colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = getRandomColor();
+        }
+
+        setInterval(changeBackgroundColor, 300);
+    </script>
+</body>
+</html>
